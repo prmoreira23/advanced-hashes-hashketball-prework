@@ -153,5 +153,12 @@ def team_names
     end
 end
 
-def player_numbers(team) 
+def player_numbers(team)
+    game_dict = game_hash
+    game_dict.each do |key, value|
+        if value[:team_name] == team
+            return value[:players]
+        end
+    end
+    nil
 end
