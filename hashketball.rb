@@ -140,7 +140,7 @@ def team_colors(team)
     game_dict = game_hash
     game_dict.each do |key, value|
         binding.pry
-        if value[:team_name] == team_name
+        if value[:team_name] == team
             return value[:colors]
         end
     end
