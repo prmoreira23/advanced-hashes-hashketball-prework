@@ -162,5 +162,4 @@ def player_numbers(team)
     end.collect do |key, value|
         value[:number]
     end
-    nil
 end
