@@ -159,6 +159,8 @@ def player_numbers(team)
         if value[:team_name] == team
             return value[:players]
         end
+    end.collect do |key, value|
+        value[:number]
     end
     nil
 end
