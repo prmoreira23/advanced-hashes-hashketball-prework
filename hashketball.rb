@@ -145,3 +145,9 @@ def team_colors(team)
     end
     nil
 end
+
+def team_names
+    game_dict = game_hash
+    game_dict.collect do ||
+    end
+end
