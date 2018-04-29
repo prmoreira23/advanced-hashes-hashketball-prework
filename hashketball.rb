@@ -148,6 +148,7 @@ end
 
 def team_names
     game_dict = game_hash
-    game_dict.collect do ||
+    game_dict.collect do |key, value|
+        
     end
 end
