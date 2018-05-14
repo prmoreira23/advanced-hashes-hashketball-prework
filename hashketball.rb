@@ -121,10 +121,7 @@ def num_points_scored(player)
     game_dict = game_hash
     player_dict = game_dict[:home][:players][player] || game_dict[:away][:players][player]
     # binding.pry
-    if !player_dict.nil?
-        return player_dict[:points]
-    end
-    player_dict
+    return !player_dict.nil? ? player_dict[:points] : nil
 end
 
 def shoe_size(player)
